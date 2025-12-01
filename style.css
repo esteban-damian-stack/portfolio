@@ -1,0 +1,593 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1{
+    text-align: center; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    pointer-events: none; /* para que no bloquee el mouse */
+}
+
+
+.hero{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #5B73FF;
+    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    justify-content: center;
+    padding: 2rem;
+
+    
+}
+
+
+
+.hero > p{
+    text-align: center; 
+
+}
+
+
+    .hero-buttons{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.btn{
+    display: flex;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    height: auto;
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    padding-left: calc(1.5rem + 6px);
+    text-align: center; 
+    flex-direction: column; 
+    align-items: center;
+    border-left: 6px solid white;
+    color: white;
+    background-color: none;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+    color: #356ACC;
+    background: linear-gradient(82deg,rgba(255, 255, 255, 1) 73%, rgba(255, 255, 255, 0) 100%);
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    padding: 1rem;
+    margin-top: 3rem;   
+    border-radius: 5px;
+    transition: all 1s ease;
+    border-color: #ffffff;
+}
+
+.contact-button:hover {
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    background: #356ACC;
+    border-color: #ffffff;
+ }
+
+.contact-button > a {
+    text-decoration: none;
+    color: #356ACC;
+    transition: all 0.2s ease;
+}
+
+.contact-button > a:hover{
+    color: white;
+}
+
+
+.second-btn{
+    display: flex;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    height: auto;
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    padding-left: calc(1.5rem + 6px);
+    text-align: center; 
+    flex-direction: column; 
+    align-items: center;
+    border-left: 6px solid white;
+    color: white;
+    transition: all 0.3s;
+}
+
+
+.skills{
+    padding: 3rem;
+    background: linear-gradient(184deg,rgba(53, 106, 204, 1) 55%, rgba(255, 255, 255, 0) 90%);
+}
+
+.skills > h2 {
+    color:aliceblue; 
+    border-left: 3px solid; 
+    padding-left:2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;   
+    gap: 2rem;
+    margin: 2rem 0;               
+}
+
+.skill {
+    color: #ffffff !important;
+    border: solid 1px #f8f8f8;
+
+    padding: 1.5rem;
+    border-radius: 12px;
+    padding-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    color: #356ACC !important;
+    border: solid 1px #f8f8f8 ;
+    background-color:#f8f8f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    padding-left: 2rem;
+}
+
+
+
+#portafolio {
+        align-self:center ;
+        height: auto;
+        width: auto;
+        padding: 1.7rem;
+}
+
+.portafolio-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.project-card {
+    height: 28rem;
+    width: 19rem;
+    border-radius: 30px;
+    overflow: hidden; /* IMPORTANTE */
+    margin: 2rem;
+    box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La clave */
+    display: block; /* Evita espacios raros */
+}
+
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.portfolio-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  padding: 0 1rem;
+}
+
+.portfolio-item.active .portfolio-content {
+  max-height: 1000px; /* puedes ajustarlo */
+  max-width: 90rem;
+  opacity: 1;
+  padding: 1rem;
+}
+
+.portfolio-img{
+    border-radius: 10px;
+    width: 19rem;
+    height: 12rem;
+}
+
+#port-img-1{
+    background-image: url("img/recalfreno.webp");
+    background-size: cover;
+}
+
+#port-img-2{
+    background-image: url("img/p2.webp");
+    background-size: cover;
+}
+
+#port-img-3{
+    background-image: url("img/p3.webp");
+    background-size: cover;
+}
+
+
+#port-img-5{
+    background-image: url("img/p5.webp");
+    background-size: cover;
+}
+
+
+#port-img-6{
+    background-image: url("img/p6.webp");
+    background-size: cover;
+}
+
+#port-img-7{
+    background-image: url("img/mkt-1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#port-img-8{
+    background-image: url("img/mkt-2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.pc{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 25rem;
+}
+
+
+.sobre-mi{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    
+}
+
+.sobre-mi img{
+    height: 16rem;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 1rem;
+    
+}
+
+.mi{
+    margin: 2rem;
+    align-items: center;
+}
+
+.contacto{
+    background-color: #252525;
+    color: #ffffff;
+    padding: 5rem;
+}
+
+footer{
+    padding: 2rem;
+    background: #5B73FF;
+    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    
+}
+
+
+#second-section {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 53rem;
+    width: 18rem;
+    margin-bottom: 13vh;
+    margin-top: 5vh;
+    padding: 2rem;
+    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    justify-self: center;
+    border-radius: 30px;
+    box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
+}
+
+
+
+#second-section > div {
+    margin-right: 30px;
+}
+
+
+#second-section>div>h3 {
+    text-align: center;
+}
+
+#second-section > div > img {
+        max-height: 50rem;
+        max-width: 30rem;
+    }
+
+#mkt {                                                                                  
+    width: 100%;
+    height: auto;
+}
+
+#mkt img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Espacio entre checkbox y texto */
+    cursor: pointer;
+}
+
+.checkbox-item h5 {
+    margin: 0;
+    /* Quita el margen por defecto del h5 */
+    font-weight: normal;
+}
+
+
+
+
+/* ------------------------------------------
+   📱 MOBILE FIRST — ya está bien como está
+------------------------------------------- */
+@media (min-width: 768px) {
+
+    .skills{
+        margin: 0 ;
+        background-color: rgb(37, 37, 37) ;
+    }
+
+
+    .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    #portafolio {
+
+        align-self:center ;
+        height: auto;
+        width: auto;
+        padding: 3rem;
+    }
+
+    .portafolio-grid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .project-card{
+        display: flex;
+        height: 20rem;
+        border-radius: 30px;
+        border: 2rem;
+        box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
+        -webkit-box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
+        -moz-box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
+        transition: all 0.5s ease;
+    }
+
+    .project-card:hover{
+        display: block;
+        height: 21rem;
+        border-radius: 30px;
+        opacity: 88%;
+        border: 2rem;
+        mix-blend-mode: difference;
+      }
+
+
+    .sobre-mi{
+    display: flex;
+    padding: 4rem;
+
+    align-items: center;
+}
+
+    .sobre-mi img{
+    height: 10rem;
+    }
+
+    .cursor-circle {
+    display:block;
+}
+
+.hero-buttons{
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 1rem;
+}
+
+
+}
+
+/* ------------------------------------------
+   📲 TABLET — 768px
+------------------------------------------- */
+@media (min-width: 768px) {
+
+
+    .portafolio {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    /* GRID SKILLS */
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* PORTAFOLIO 3 columnas */
+    .portafolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        place-items: center;
+    }
+
+    /* Ajuste tarjetas */
+    .project-card {
+        width: 100%;
+        max-width: 18rem;
+        height: 20rem;
+    }
+
+    .project-card:hover {
+        height: 21rem;
+        opacity: 88%;
+    }
+
+    /* SOBRE MI — pasa de columna a fila */
+    .sobre-mi {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+        
+    }
+
+    .sobre-mi img {
+        height: 12rem;
+    }
+
+    
+
+    /* SECOND SECTION — pasa a 2 columnas */
+    #second-section {
+        grid-template-rows: repeat(3,1fr);
+        height: 30rem;
+        width: 70rem;
+        padding: 40px;
+    }
+
+    #mkt {
+        height: 2rem;
+    }
+
+
+
+}
+
+
+
+/* ------------------------------------------
+   🖥 DESKTOP — 1024px
+------------------------------------------- */
+@media (min-width: 1024px) {
+
+    /* HERO más elegante */
+    .hero {
+        height: 85vh;
+    }
+
+    /* SECOND SECTION — ahora sí 3 columnas */
+    #second-section {
+        grid-template-columns: repeat(3, 1fr) !important;
+        width: 70vw;
+        height: 27rem;
+        padding: 60px;
+        background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    
+        transition: all 0.6s ease;
+
+    }
+
+        #second-section:hover {
+        grid-template-columns: repeat(3, 1fr) !important;
+        width: 70vw;
+        height: 27rem;
+        padding: 60px;
+        background: rgb(45, 117, 252);    
+        
+    }
+
+
+    /* SOBRE MI más grande */
+    .sobre-mi img {
+        height: 14rem;
+    }
+
+    /* Cursor solo en desktop */
+
+
+    .portafolio{
+        display: grid;
+        grid-template-rows: 10% 90%;
+        margin-bottom: 5rem;
+        color: #356ACC;
+    }
+
+    #mkt {
+    width: 26rem;
+    height: auto;
+}
+
+    #mkt img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cursor-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    pointer-events: none; /* NO bloquea clicks */
+    transform: translate(-50%, -50%);
+
+    background: rgba(0, 81, 255, 0.795); /* Transparente */
+    backdrop-filter: blur(4px) brightness(1.4); /* Reacciona al fondo */
+    mix-blend-mode:color-dodge;           /* Efecto visual loco */
+
+    transition: transform 0.1s ease-out;
+    z-index: 9999;
+}
+
+
+
+}
+
+
