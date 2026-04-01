@@ -357,7 +357,9 @@ footer {
     -webkit-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     overflow: hidden;
+    height: auto;
 }
+
 
 #second-section > * {
     min-width: 0;
@@ -403,11 +405,13 @@ footer {
     width: 100%;
     height: auto;
     min-width: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #mkt img {
     width: 100%;
-    max-width: 100%;
+    max-width: 220px;
     height: auto;
     display: block;
     object-fit: contain;
@@ -496,14 +500,19 @@ footer {
         gap: 1rem;
     }
 
-    #second-section {
+   #second-section {
         grid-template-columns: 1fr;
         width: min(90%, 32rem);
         padding: 2.5rem;
+        margin-bottom: 5rem;
     }
 
     #mkt {
         height: auto;
+    }
+
+    #mkt img {
+        max-width: 260px;
     }
 }
 
