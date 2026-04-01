@@ -344,85 +344,48 @@ footer {
 }
 
 /* SECOND SECTION */
+
 #second-section {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-rows: repeat(3, 1fr);
+    height: 53rem;
     width: 18rem;
-    margin: 5vh auto 13vh auto;
+    margin-bottom: 13vh;
+    margin-top: 5vh;
     padding: 2rem;
-    background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    justify-self: center;
     border-radius: 30px;
     box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.60);
     -webkit-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
-    overflow: hidden;
 }
 
-#second-section > * {
-    min-width: 0;
-}
-
-#second-section h2,
-#second-section h3,
-#second-section h4,
-#second-section h5,
-#second-section h6,
-#second-section p,
-#second-section label {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    max-width: 100%;
-}
-
-#second-section form {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-}
-
-#second-section input,
-#second-section button {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-#second-section button {
-    padding: 0.85rem 1rem;
-    border: 0;
-    border-radius: 10px;
-    background: #ffffff;
-    color: #356ACC;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-#second-section button:hover {
-    opacity: 0.92;
-}
 
 
 #second-section > div {
-    margin-right: 0;
-    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* fallback */
 }
 
-#second-section > div > h3 {
+
+#second-section>div>h3 {
     text-align: center;
 }
 
-#mkt {
+#second-section > div > img {
+        max-height: 50rem;
+        max-width: 30rem;
+    }
+
+#mkt {                                                                                  
     width: 100%;
     height: auto;
-    min-width: 0;
 }
 
 #mkt img {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    display: block;
     object-fit: contain;
 }
 
