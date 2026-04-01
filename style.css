@@ -413,15 +413,20 @@ footer {
 
 .checkbox-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
     cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .checkbox-item h5 {
     margin: 0;
     font-weight: normal;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 /* TABLET */
