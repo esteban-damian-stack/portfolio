@@ -16,6 +16,10 @@ h1 {
     align-items: center;
 }
 
+form input{
+    background-color: aliceblue;
+}
+
 #circle {
     position: absolute;
     width: 40px;
@@ -339,7 +343,8 @@ footer {
 }
 
 #second-section > div {
-    margin-right: 30px;
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* fallback */
 }
 
 #second-section > div > h3 {
