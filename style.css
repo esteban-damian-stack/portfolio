@@ -453,6 +453,9 @@ footer {
 
 /* TABLET */
 @media (min-width: 768px) {
+    .hero img {
+        width: 90px;
+    }
     .skills {
         margin: 0;
         background-color: rgb(37, 37, 37);
