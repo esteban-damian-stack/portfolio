@@ -330,7 +330,7 @@ footer {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     height: 53rem;
-    width: 25rem;
+    width: 18rem;
     margin-bottom: 13vh;
     margin-top: 5vh;
     padding: 2rem;
@@ -340,30 +340,57 @@ footer {
     box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.60);
     -webkit-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
+    overflow: hidden;
+}
+
+#second-section > * {
+    min-width: 0;
+}
+
+#second-section h2,
+#second-section h3,
+#second-section h4,
+#second-section h5,
+#second-section h6,
+#second-section p,
+#second-section label {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+#second-section form {
+    min-width: 0;
+    max-width: 100%;
+}
+
+#second-section input,
+#second-section button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 #second-section > div {
-    overflow-wrap: break-word;
-    word-wrap: break-word; /* fallback */
+    margin-right: 0;
+    min-width: 0;
 }
 
 #second-section > div > h3 {
     text-align: center;
 }
 
-#second-section > div > img {
-    max-height: 50rem;
-    max-width: 30rem;
-}
-
 #mkt {
     width: 100%;
     height: auto;
+    min-width: 0;
 }
 
 #mkt img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    display: block;
     object-fit: contain;
 }
 
@@ -431,16 +458,20 @@ footer {
         gap: 1rem;
     }
 
-    #second-section {
-        grid-template-rows: repeat(3, 1fr);
-        height: 45rem;
-        width: 70rem;
-        padding: 40px;
+   #second-section {
+        grid-template-columns: 1fr 1.2fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        gap: 2rem;
+        width: min(95%, 70rem);
+        height: auto;
+        padding: 2.5rem;
     }
 
     #mkt {
-        height: 2rem;
+        height: auto;
     }
+}
 }
 
 /* DESKTOP */
@@ -450,17 +481,28 @@ footer {
     }
 
     #second-section {
-        grid-template-columns: repeat(3, 1fr) !important;
-        width: 70vw;
-        height: 27rem;
-        padding: 60px;
-        background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+        grid-template-columns: 1fr 1.2fr 1fr;
+        width: min(90%, 70rem);
+        height: auto;
+        padding: 3rem;
         transition: all 0.6s ease;
     }
 
     #second-section:hover {
         background: rgb(45, 117, 252);
     }
+
+    #mkt {
+        width: 100%;
+        height: auto;
+    }
+
+    #mkt img {
+        width: 100%;
+        max-width: 26rem;
+        margin: 0 auto;
+    }
+
 
     .sobre-mi img {
         height: 14rem;
@@ -471,17 +513,6 @@ footer {
         grid-template-rows: auto 1fr;
         margin-bottom: 5rem;
         color: #356ACC;
-    }
-
-    #mkt {
-        width: 26rem;
-        height: auto;
-    }
-
-    #mkt img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
     }
 
     .cursor-circle {
