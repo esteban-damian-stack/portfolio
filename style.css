@@ -41,6 +41,9 @@ form input {
     justify-content: center;
     padding: 2rem;
 }
+.hero > img {
+    max-height: 25vh;
+}
 
 .hero > p {
     text-align: center;
