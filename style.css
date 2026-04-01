@@ -3,15 +3,16 @@
     font-optical-sizing: auto;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-h1{
-    text-align: center; 
-    flex-direction: column; 
+h1 {
+    text-align: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -21,59 +22,51 @@ h1{
     height: 40px;
     background: red;
     border-radius: 50%;
-    pointer-events: none; /* para que no bloquee el mouse */
+    pointer-events: none;
 }
 
-
-.hero{
+/* HERO */
+.hero {
     display: flex;
     height: 90vh;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: #5B73FF;
-    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
     justify-content: center;
     padding: 2rem;
-
-    
 }
 
-
-
-.hero > p{
-    text-align: center; 
-
+.hero > p {
+    text-align: center;
 }
 
-
-    .hero-buttons{
+.hero-buttons {
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.btn{
+.btn {
     display: flex;
     border-radius: 5px;
     margin: 0.5rem;
     padding: 0.75rem 1.5rem;
     height: auto;
     width: auto;
-    padding: 0.75rem 1.5rem;
     padding-left: calc(1.5rem + 6px);
-    text-align: center; 
-    flex-direction: column; 
+    text-align: center;
+    flex-direction: column;
     align-items: center;
     border-left: 6px solid white;
     color: white;
-    background-color: none;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     color: #356ACC;
-    background: linear-gradient(82deg,rgba(255, 255, 255, 1) 73%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(82deg, rgba(255, 255, 255, 1) 73%, rgba(255, 255, 255, 0) 100%);
 }
 
 .contact-button {
@@ -81,21 +74,17 @@ h1{
     align-items: center;
     height: 1rem;
     padding: 1rem;
-    margin-top: 3rem;   
+    margin-top: 3rem;
     border-radius: 5px;
     transition: all 1s ease;
-    border-color: #ffffff;
+    border: 1px solid #ffffff;
+    background: #ffffff;
 }
 
 .contact-button:hover {
-    display: flex;
-    align-items: center;
-    height: 1rem;
-    padding: 1rem;
-    margin-top: 3rem;
     background: #356ACC;
     border-color: #ffffff;
- }
+}
 
 .contact-button > a {
     text-decoration: none;
@@ -103,204 +92,236 @@ h1{
     transition: all 0.2s ease;
 }
 
-.contact-button > a:hover{
+.contact-button > a:hover {
     color: white;
 }
 
-
-.second-btn{
+.second-btn {
     display: flex;
     border-radius: 5px;
     margin: 0.5rem;
     padding: 0.75rem 1.5rem;
     height: auto;
     width: auto;
-    padding: 0.75rem 1.5rem;
     padding-left: calc(1.5rem + 6px);
-    text-align: center; 
-    flex-direction: column; 
+    text-align: center;
+    flex-direction: column;
     align-items: center;
     border-left: 6px solid white;
     color: white;
     transition: all 0.3s;
 }
 
-
-.skills{
+/* SKILLS */
+.skills {
     padding: 3rem;
-    background: linear-gradient(184deg,rgba(53, 106, 204, 1) 55%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(184deg, rgba(53, 106, 204, 1) 55%, rgba(255, 255, 255, 0) 90%);
 }
 
 .skills > h2 {
-    color:aliceblue; 
-    border-left: 3px solid; 
-    padding-left:2rem;
+    color: aliceblue;
+    border-left: 3px solid;
+    padding-left: 2rem;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 2rem 0;               
+    margin: 2rem 0;
 }
 
 .skill {
     color: #ffffff !important;
     border: solid 1px #f8f8f8;
-
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
     border-radius: 12px;
-    padding-left: 2rem;
     transition: all 0.3s ease;
 }
 
 .skill:hover {
     color: #356ACC !important;
-    border: solid 1px #f8f8f8 ;
-    background-color:#f8f8f8;
-    padding: 1.5rem;
-    border-radius: 12px;
-    padding-left: 2rem;
+    border: solid 1px #f8f8f8;
+    background-color: #f8f8f8;
 }
 
-
-
+/* PORTAFOLIO */
 #portafolio {
-        align-self:center ;
-        height: auto;
-        width: auto;
-        padding: 1.7rem;
+    align-self: center;
+    height: auto;
+    width: auto;
+    padding: 1.7rem;
 }
 
-.portafolio-grid{
+.portafolio {
+    display: block;
+    color: #356ACC;
+}
+
+.portafolio-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
 }
 
 .project-card {
-    height: 28rem;
-    width: 19rem;
+    width: 100%;
+    max-width: 19rem;
+    height: 20rem;
     border-radius: 30px;
-    overflow: hidden; /* IMPORTANTE */
-    margin: 2rem;
-    box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
+    overflow: hidden;
+    margin: 0 auto 1rem auto;
+    box-shadow: -8px 6px 5px 0px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: -8px 6px 5px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: -8px 6px 5px 0px rgba(0, 0, 0, 0.24);
+    transition: all 0.5s ease;
 }
 
 .project-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* La clave */
-    display: block; /* Evita espacios raros */
+    object-fit: cover;
+    display: block;
 }
 
-.portfolio{
+.project-card:hover {
+    opacity: 0.88;
+    transform: translateY(-4px);
+}
+
+.portfolio-item > h4 {
+    text-align: center;
+    color: #252525;
+    margin-bottom: 1rem;
+    min-height: 2.5rem;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 .portfolio-content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.5s ease;
-  padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 0 1rem;
+    color: #252525;
 }
 
 .portfolio-item.active .portfolio-content {
-  max-height: 1000px; /* puedes ajustarlo */
-  max-width: 90rem;
-  opacity: 1;
-  padding: 1rem;
+    max-height: 1200px;
+    max-width: 100%;
+    opacity: 1;
+    padding: 1rem;
 }
 
-.portfolio-img{
+.portfolio-content p,
+.portfolio-content h5,
+.portfolio-content ul,
+.portfolio-content .portfolio-img {
+    margin-bottom: 1rem;
+}
+
+.portfolio-content ul {
+    padding-left: 1.2rem;
+}
+
+.portfolio-content li {
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-img {
     border-radius: 10px;
-    width: 19rem;
+    width: 100%;
+    max-width: 19rem;
     height: 12rem;
+    background-position: center;
 }
 
-#port-img-1{
+#port-img-1 {
     background-image: url("img/recalfreno.webp");
     background-size: cover;
 }
 
-#port-img-2{
+#port-img-2 {
     background-image: url("img/p2.webp");
     background-size: cover;
 }
 
-#port-img-3{
+#port-img-3 {
     background-image: url("img/p3.webp");
     background-size: cover;
 }
 
-
-#port-img-5{
+#port-img-5 {
     background-image: url("img/p5.webp");
     background-size: cover;
 }
 
-
-#port-img-6{
+#port-img-6 {
     background-image: url("img/p6.webp");
     background-size: cover;
 }
 
-#port-img-7{
+#port-img-7 {
     background-image: url("img/mkt-1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#port-img-8{
+#port-img-8 {
     background-image: url("img/mkt-2.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-
-.pc{
+.pc {
     display: flex;
     align-items: center;
     justify-items: center;
     width: 25rem;
 }
 
-
-.sobre-mi{
+/* SOBRE MI */
+.sobre-mi {
     display: grid;
-    grid-template-columns: repeat(1,2fr);
-    
+    grid-template-columns: 1fr;
 }
 
-.sobre-mi img{
+.sobre-mi img {
     height: 16rem;
     align-self: center;
     justify-self: center;
     padding-bottom: 1rem;
-    
 }
 
-.mi{
+.mi {
     margin: 2rem;
     align-items: center;
 }
 
-.contacto{
+/* CONTACTO */
+.contacto {
     background-color: #252525;
     color: #ffffff;
     padding: 5rem;
 }
 
-footer{
+footer {
     padding: 2rem;
     background: #5B73FF;
-    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
-    
+    background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
 }
 
-
+/* SECOND SECTION */
 #second-section {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -309,7 +330,7 @@ footer{
     margin-bottom: 13vh;
     margin-top: 5vh;
     padding: 2rem;
-    background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
     justify-self: center;
     border-radius: 30px;
     box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.60);
@@ -317,23 +338,20 @@ footer{
     -moz-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
 }
 
-
-
 #second-section > div {
     margin-right: 30px;
 }
 
-
-#second-section>div>h3 {
+#second-section > div > h3 {
     text-align: center;
 }
 
 #second-section > div > img {
-        max-height: 50rem;
-        max-width: 30rem;
-    }
+    max-height: 50rem;
+    max-width: 30rem;
+}
 
-#mkt {                                                                                  
+#mkt {
     width: 100%;
     height: auto;
 }
@@ -344,156 +362,72 @@ footer{
     object-fit: contain;
 }
 
-
 .checkbox-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    /* Espacio entre checkbox y texto */
     cursor: pointer;
 }
 
 .checkbox-item h5 {
     margin: 0;
-    /* Quita el margen por defecto del h5 */
     font-weight: normal;
 }
 
-
-
-
-/* ------------------------------------------
-   📱 MOBILE FIRST — ya está bien como está
-------------------------------------------- */
+/* TABLET */
 @media (min-width: 768px) {
-
-    .skills{
-        margin: 0 ;
-        background-color: rgb(37, 37, 37) ;
+    .skills {
+        margin: 0;
+        background-color: rgb(37, 37, 37);
     }
 
-
-    .skills-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    }
-
-    #portafolio {
-
-        align-self:center ;
-        height: auto;
-        width: auto;
-        padding: 3rem;
-    }
-
-    .portafolio-grid{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-
-    }
-
-
-    .project-card{
-        display: flex;
-        height: 20rem;
-        border-radius: 30px;
-        border: 2rem;
-        box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
-        -webkit-box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
-        -moz-box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.24);
-        transition: all 0.5s ease;
-    }
-
-    .project-card:hover{
-        display: block;
-        height: 21rem;
-        border-radius: 30px;
-        opacity: 88%;
-        border: 2rem;
-        mix-blend-mode: difference;
-      }
-
-
-    .sobre-mi{
-    display: flex;
-    padding: 4rem;
-
-    align-items: center;
-}
-
-    .sobre-mi img{
-    height: 10rem;
-    }
-
-    .cursor-circle {
-    display:block;
-}
-
-.hero-buttons{
-    display: flex;
-    width: auto;
-    height: auto;
-    gap: 1rem;
-}
-
-
-}
-
-/* ------------------------------------------
-   📲 TABLET — 768px
-------------------------------------------- */
-@media (min-width: 768px) {
-
-
-    .portafolio {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    /* GRID SKILLS */
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* PORTAFOLIO 3 columnas */
+    #portafolio {
+        padding: 3rem;
+    }
+
     .portafolio-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        place-items: center;
+        align-items: start;
     }
 
-    /* Ajuste tarjetas */
+    .portfolio-item {
+        height: 100%;
+    }
+
     .project-card {
-        width: 100%;
         max-width: 18rem;
         height: 20rem;
     }
 
-    .project-card:hover {
-        height: 21rem;
-        opacity: 88%;
-    }
-
-    /* SOBRE MI — pasa de columna a fila */
     .sobre-mi {
         display: flex;
         align-items: center;
         gap: 2rem;
         padding: 4rem;
-        
     }
 
     .sobre-mi img {
         height: 12rem;
     }
 
-    
+    .cursor-circle {
+        display: block;
+    }
 
-    /* SECOND SECTION — pasa a 2 columnas */
+    .hero-buttons {
+        display: flex;
+        width: auto;
+        height: auto;
+        gap: 1rem;
+    }
+
     #second-section {
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
         height: 30rem;
         width: 70rem;
         padding: 40px;
@@ -502,92 +436,62 @@ footer{
     #mkt {
         height: 2rem;
     }
-
-
-
 }
 
-
-
-/* ------------------------------------------
-   🖥 DESKTOP — 1024px
-------------------------------------------- */
+/* DESKTOP */
 @media (min-width: 1024px) {
-
-    /* HERO más elegante */
     .hero {
         height: 85vh;
     }
 
-    /* SECOND SECTION — ahora sí 3 columnas */
     #second-section {
         grid-template-columns: repeat(3, 1fr) !important;
         width: 70vw;
         height: 27rem;
         padding: 60px;
-        background: linear-gradient(182deg,rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
-    
+        background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
         transition: all 0.6s ease;
-
     }
 
-        #second-section:hover {
-        grid-template-columns: repeat(3, 1fr) !important;
-        width: 70vw;
-        height: 27rem;
-        padding: 60px;
-        background: rgb(45, 117, 252);    
-        
+    #second-section:hover {
+        background: rgb(45, 117, 252);
     }
 
-
-    /* SOBRE MI más grande */
     .sobre-mi img {
         height: 14rem;
     }
 
-    /* Cursor solo en desktop */
-
-
-    .portafolio{
+    .portafolio {
         display: grid;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: auto 1fr;
         margin-bottom: 5rem;
         color: #356ACC;
     }
 
     #mkt {
-    width: 26rem;
-    height: auto;
-}
+        width: 26rem;
+        height: auto;
+    }
 
     #mkt img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .cursor-circle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 81, 255, 0.795);
+        backdrop-filter: blur(4px) brightness(1.4);
+        mix-blend-mode: color-dodge;
+        transition: transform 0.1s ease-out;
+        z-index: 9999;
+    }
 }
-
-.cursor-circle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-    pointer-events: none; /* NO bloquea clicks */
-    transform: translate(-50%, -50%);
-
-    background: rgba(0, 81, 255, 0.795); /* Transparente */
-    backdrop-filter: blur(4px) brightness(1.4); /* Reacciona al fondo */
-    mix-blend-mode:color-dodge;           /* Efecto visual loco */
-
-    transition: transform 0.1s ease-out;
-    z-index: 9999;
-}
-
-
-
-}
-
-
