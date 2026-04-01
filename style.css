@@ -388,6 +388,21 @@ footer {
     box-sizing: border-box;
 }
 
+#second-section button {
+    padding: 0.85rem 1rem;
+    border: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #356ACC;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#second-section button:hover {
+    opacity: 0.92;
+}
+
+
 #second-section > div {
     margin-right: 0;
     min-width: 0;
@@ -411,22 +426,46 @@ footer {
     object-fit: contain;
 }
 
+#second-section form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#second-section form input {
+    margin-bottom: 1rem;
+    padding: 0.7rem 0.85rem;
+    border: 0;
+    border-radius: 8px;
+}
+
+#checkbox {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 .checkbox-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: start;
+    column-gap: 0.65rem;
     cursor: pointer;
+    width: 100%;
 }
 
 .checkbox-item input[type="checkbox"] {
     margin: 0;
-    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 0.18rem;
 }
 
-.checkbox-item h5 {
+.checkbox-text {
+    display: block;
     margin: 0;
-    font-weight: normal;
-    line-height: 1.2;
+    line-height: 1.35;
+    font-size: 0.95rem;
 }
 
 /* TABLET */
