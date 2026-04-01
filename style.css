@@ -16,6 +16,7 @@ h1 {
     align-items: center;
 }
 
+
 form input {
     background-color: aliceblue;
 }
@@ -41,8 +42,9 @@ form input {
     justify-content: center;
     padding: 2rem;
 }
-.hero > img {
-    max-height: 25vh;
+.hero img {
+    width: clamp(80px, 12vw, 140px);
+    height: auto;
 }
 
 .hero > p {
