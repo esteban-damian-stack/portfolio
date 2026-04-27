@@ -16,6 +16,10 @@ h1 {
     align-items: center;
 }
 
+header{
+    max-height: 100%;
+    weight: auto;
+}
 
 form input {
     background-color: aliceblue;
