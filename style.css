@@ -360,6 +360,7 @@ footer {
     gap: 2rem;
     align-self: center;
     justify-items: center;
+    margin: 4rem auto;
     width: 18rem;
     padding: 2rem;
     background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
