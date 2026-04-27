@@ -19,6 +19,7 @@ h1 {
 header{
     max-height: 100vh;
     weight: auto;
+    padding-bottom: 3vh;
 }
 
 form input {
