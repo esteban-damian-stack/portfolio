@@ -360,13 +360,17 @@ footer {
     gap: 2rem;
     justify-items: center;
     width: min(90%, 20rem);  
-    max-width: 18rem;          
+    max-width: 30rem;          
     padding: 2rem;
     background: linear-gradient(182deg, #5B73FF 0%, #356ACC 100%);
     border-radius: 30px;
     box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     overflow: hidden;
-    margin: 0 auto;           
+    margin: 0 auto;      
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
