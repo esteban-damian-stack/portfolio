@@ -353,7 +353,7 @@ footer {
     background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
 }
 
-/* SECOND SECTION */
+
 #second-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -367,10 +367,6 @@ footer {
     box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     overflow: hidden;
     margin: 0 auto;      
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
