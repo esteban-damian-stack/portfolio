@@ -358,15 +358,15 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    width: 18rem;
+    justify-items: center;
+    width: min(90%, 20rem);  
+    max-width: 18rem;          
     padding: 2rem;
-    background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
+    background: linear-gradient(182deg, #5B73FF 0%, #356ACC 100%);
     border-radius: 30px;
-    box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.60);
-    -webkit-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
-    -moz-box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
+    box-shadow: -4px 13px 74px 5px rgba(0, 0, 0, 0.42);
     overflow: hidden;
-    height: auto;
+    margin: 0 auto;           
 }
 
 
