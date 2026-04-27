@@ -359,7 +359,6 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
     width: 18rem;
-    margin: 5vh auto 13vh auto;
     padding: 2rem;
     background: linear-gradient(182deg, rgba(91, 115, 255, 1) 0%, rgba(53, 106, 204, 1) 100%);
     border-radius: 30px;
